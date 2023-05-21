@@ -18,6 +18,9 @@ public class PlayerControls : MonoBehaviour
     private int currentLane = 1;
     public float distanceBetweenLanes = 4;
 
+    public float jumpForce;
+    public float Gravity = -20;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -26,6 +29,16 @@ public class PlayerControls : MonoBehaviour
     void Update()
     {
         direction.z = moveSpeed;
+
+        direction.y += Gravity * Time.deltaTime;
+        if (controller.isGrounded)
+        {
+            
+          if(Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            Jump();
+        }
+        }
 
         // Sprawdzamy, czy zosta³ naciœniêty klawisz strza³ki w prawo
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -72,5 +85,10 @@ public class PlayerControls : MonoBehaviour
     {
         // Poruszamy siê w przód na podstawie kierunku i prêdkoœci
         controller.Move(direction * Time.fixedDeltaTime);
+    }
+
+    private void Jump()
+    {
+        direction.y = jumpForce;
     }
 }
