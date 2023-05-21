@@ -16,7 +16,7 @@ public class PlayerControls : MonoBehaviour
      Zmienna currentLane mówi nam o tym, na jakim pasie znajduje siê aktualnie samochód.
     */
     private int currentLane = 1;
-    public float distanceBetweenLanes = 4;
+    public float distanceBetweenLanes = 5.5f;
 
     public float jumpForce;
     public float Gravity = -20;
@@ -75,7 +75,7 @@ public class PlayerControls : MonoBehaviour
             // Jeœli chcemy siê znale¿æ na prawym pasie, dodajemy przesuniêcie w prawo
             targetPosition += Vector3.right * distanceBetweenLanes;
         }
-
+        if (targetPosition.x == 0) return;
         // P³ynnie przechodzimy z obecnej pozycji na pozycjê docelow¹ u¿ywaj¹c funkcji Lerp
         //Starajcie siê nie ruszaæ zmiennej laneSwitchSmoothness bo potrafi¹ siê odpierdoliæ niez³e jaja gracz bêdzie siê trz¹s³ jak pojebany
         transform.position = Vector3.Lerp(transform.position, targetPosition, laneSwitchSmoothness * Time.fixedDeltaTime);
