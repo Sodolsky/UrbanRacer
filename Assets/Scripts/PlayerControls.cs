@@ -33,7 +33,6 @@ public class PlayerControls : MonoBehaviour
         direction.y += Gravity * Time.deltaTime;
         if (controller.isGrounded)
         {
-            
           if(Input.GetKeyDown(KeyCode.UpArrow))
         {
             Jump();
@@ -61,7 +60,6 @@ public class PlayerControls : MonoBehaviour
                 currentLane -= 1;
             }
         }
-
         // Obliczamy pozycjê docelow¹, do której bêdziemy siê poruszaæ
         Vector3 targetPosition = transform.position.z * transform.forward + transform.up * transform.position.y;
         //WA¯NE! W tym momencie kodu bêdziemy siê znajdowali zawsze na œrodkowym pasier a currentLane bêdzie pasem na którym bêdziemy chcieli siê znaleŸæ!
@@ -79,7 +77,6 @@ public class PlayerControls : MonoBehaviour
         //Starajcie siê nie ruszaæ zmiennej laneSwitchSmoothness bo potrafi¹ siê odpierdoliæ niez³e jaja gracz bêdzie siê trz¹s³ jak pojebany
         transform.position = Vector3.Lerp(transform.position, targetPosition, laneSwitchSmoothness * Time.fixedDeltaTime);
     }
-
     private void FixedUpdate()
     {
         // Poruszamy siê w przód na podstawie kierunku i prêdkoœci
