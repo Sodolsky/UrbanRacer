@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8308643832988051288}
   - component: {fileID: 8316819742067847582}
   - component: {fileID: 8174202740780552412}
+  - component: {fileID: 3546127505315409383}
   m_Layer: 0
   m_Name: ObstacleBarrier
   m_TagString: Untagged
@@ -134,3 +135,15 @@ LODGroup:
     renderers:
     - renderer: {fileID: 8357523130843004042}
   m_Enabled: 1
+--- !u!114 &3546127505315409383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8335307011174473392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1ea5064c868824daebd0c9d54cde83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

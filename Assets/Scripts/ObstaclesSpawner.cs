@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ObstaclesSpawner : MonoBehaviour
@@ -7,10 +8,9 @@ public class ObstaclesSpawner : MonoBehaviour
     public GameObject[] objectsToSpawn;  // Array of objects to spawn
     public Transform[] spawnPoints;  // Array of spawn points representing lanes
     public float spawnInterval = 0.8f;  // Time interval between spawns
-    private int lastSpawnedLaneIndex = -1;  
-
+    private int lastSpawnedLaneIndex = -1;
     private float timer = 0f;
-
+    //TODO Fix lane spawn points moving away!
     private void Update()
     {
         timer += Time.deltaTime;
@@ -73,6 +73,7 @@ public class ObstaclesSpawner : MonoBehaviour
         spawnPoint.position += new Vector3(0f, 0f, Car.transform.position.z + 15f);
 
         GameObject spawnedObject = Instantiate(objectToSpawn, spawnPoint.position, spawnPoint.rotation);
+        Debug.Log(spawnPoint.position.z);
         spawnedObject.transform.Translate(-4.3f, 0f, 0f);
         spawnedObject.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
     }
@@ -108,4 +109,5 @@ public class ObstaclesSpawner : MonoBehaviour
 
         return randomLaneIndex;
     }
+    
 }
