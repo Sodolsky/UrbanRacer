@@ -1,33 +1,33 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/UrbanRacer/Packages/manifest.json
+    m_FilePath: E:/UrbanRacer/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638204317086123515
-    m_Hash: 858892524
+      ticks: 638201255513934346
+    m_Hash: 3842001391
   m_LockFileStatus:
-    m_FilePath: C:/UrbanRacer/Packages/packages-lock.json
+    m_FilePath: E:/UrbanRacer/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638204321705882279
-    m_Hash: 2934918161
+      ticks: 638206466633226720
+    m_Hash: 2606399936
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: C:/UrbanRacer/Packages
-m_EditorVersion: 2021.3.16f1 (4016570cf34f)
+m_ProjectPath: E:/UrbanRacer/Packages
+m_EditorVersion: 2021.3.25f1 (68ef2c4f8861)
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@2.0.4
   testable: 0
   isDirectDependency: 1
   version: 2.0.4
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.collab-proxy@2.0.4
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.collab-proxy@2.0.4
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -111,22 +111,11 @@ m_ResolvedPackages:
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     compatible:
-    - 1.17.7
-    - 2.0.0-preview.6
-    - 2.0.0-preview.8
-    - 2.0.0-preview.15
-    - 2.0.0-preview.17
-    - 2.0.0-preview.20
-    - 2.0.0-preview.21
-    - 2.0.0-preview.22
-    - 2.0.0
-    - 2.0.1
-    - 2.0.3
     - 2.0.4
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
-    verified: 1.17.7
+    verified: 2.0.4
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -163,14 +152,14 @@ m_ResolvedPackages:
     revision: dc15ef2ed609e8c19d0525a46c5bf7dd78df8432
     path: 
   unityLifecycle:
-    version: 1.17.7
+    version: 2.0.4
     nextVersion: 
 - packageId: com.unity.feature.development@1.0.1
   testable: 0
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.feature.development@1.0.1
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.feature.development@1.0.1
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -225,9 +214,9 @@ m_ResolvedPackages:
   - name: com.unity.editorcoroutines
     version: 1.0.0
   - name: com.unity.performance.profile-analyzer
-    version: 1.1.1
-  - name: com.unity.testtools.codecoverage
     version: 1.2.2
+  - name: com.unity.testtools.codecoverage
+    version: 1.2.3
   - name: com.unity.settings-manager
     version: 1.0.3
   keywords: []
@@ -257,7 +246,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.21
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.ide.rider@3.0.21
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.ide.rider@3.0.21
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -311,10 +300,6 @@ m_ResolvedPackages:
     - 3.0.20
     - 3.0.21
     compatible:
-    - 3.0.16
-    - 3.0.17
-    - 3.0.18
-    - 3.0.20
     - 3.0.21
     verified: 3.0.21
   dependencies:
@@ -343,14 +328,14 @@ m_ResolvedPackages:
     revision: bb7732dcafe867368246b7661dda05368b74dd8e
     path: 
   unityLifecycle:
-    version: 3.0.16
+    version: 3.0.21
     nextVersion: 
 - packageId: com.unity.ide.visualstudio@2.0.18
   testable: 0
   isDirectDependency: 1
   version: 2.0.18
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.ide.visualstudio@2.0.18
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.ide.visualstudio@2.0.18
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -389,8 +374,6 @@ m_ResolvedPackages:
     - 2.0.17
     - 2.0.18
     compatible:
-    - 2.0.16
-    - 2.0.17
     - 2.0.18
     verified: 2.0.18
   dependencies:
@@ -425,14 +408,14 @@ m_ResolvedPackages:
     revision: 9d3c07127cbe1916b8abbfd18f71fb8d9df8008c
     path: 
   unityLifecycle:
-    version: 2.0.16
+    version: 2.0.18
     nextVersion: 
 - packageId: com.unity.ide.vscode@1.2.5
   testable: 0
   isDirectDependency: 1
   version: 1.2.5
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.ide.vscode@1.2.5
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.ide.vscode@1.2.5
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -494,7 +477,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.1.31
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.test-framework@1.1.31
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.test-framework@1.1.31
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -608,7 +591,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.6
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.textmeshpro@3.0.6
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.textmeshpro@3.0.6
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -777,7 +760,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.6.5
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.timeline@1.6.5
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.timeline@1.6.5
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -873,7 +856,6 @@ m_ResolvedPackages:
     - 1.8.1
     - 1.8.2
     compatible:
-    - 1.6.4
     - 1.6.5
     - 1.7.0-pre.1
     - 1.7.0-pre.2
@@ -929,14 +911,14 @@ m_ResolvedPackages:
     revision: 4ed67a7e62ce940db3d44dc5eca8fade1c664aed
     path: 
   unityLifecycle:
-    version: 1.6.4
+    version: 1.6.5
     nextVersion: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.ugui@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.ugui@1.0.0
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -1000,7 +982,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.0
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.visualscripting@1.8.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.visualscripting@1.8.0
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1044,9 +1026,8 @@ m_ResolvedPackages:
     - 1.8.0-pre.1
     - 1.8.0
     compatible:
-    - 1.7.8
     - 1.8.0
-    verified: 1.7.8
+    verified: 1.8.0
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -1081,14 +1062,14 @@ m_ResolvedPackages:
     revision: 0de66378b19e990494d98f39ecc2b6aa5ac65351
     path: 
   unityLifecycle:
-    version: 1.7.8
+    version: 1.8.0
     nextVersion: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.ai@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.ai@1.0.0
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -1137,7 +1118,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.androidjni@1.0.0
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1185,7 +1166,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.animation@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.animation@1.0.0
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1234,7 +1215,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1283,7 +1264,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.audio@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.audio@1.0.0
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1332,7 +1313,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.cloth@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.cloth@1.0.0
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1385,7 +1366,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.director@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.director@1.0.0
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1442,7 +1423,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1492,7 +1473,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.imgui@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.imgui@1.0.0
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1541,7 +1522,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1590,7 +1571,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1639,7 +1620,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.physics@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.physics@1.0.0
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1688,7 +1669,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.physics2d@1.0.0
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1737,7 +1718,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.screencapture@1.0.0
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1790,7 +1771,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.terrain@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.terrain@1.0.0
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1839,7 +1820,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -1896,7 +1877,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.tilemap@1.0.0
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -1948,7 +1929,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.ui@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.ui@1.0.0
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -1997,7 +1978,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.uielements@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.uielements@1.0.0
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2062,7 +2043,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.umbra@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.umbra@1.0.0
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2111,7 +2092,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2168,7 +2149,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2217,7 +2198,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2274,7 +2255,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2331,7 +2312,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2388,7 +2369,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2461,7 +2442,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.vehicles@1.0.0
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2514,7 +2495,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.video@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.video@1.0.0
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2575,7 +2556,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.vr@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.vr@1.0.0
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2638,7 +2619,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.wind@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.wind@1.0.0
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -2687,7 +2668,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.xr@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.xr@1.0.0
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -2748,7 +2729,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.subsystems@1.0.0
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -2801,7 +2782,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
   assetPath: Packages/com.unity.modules.uielementsnative
   name: com.unity.modules.uielementsnative
   displayName: UIElements Native
@@ -2861,7 +2842,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.6
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.ext.nunit@1.0.6
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.ext.nunit@1.0.6
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -2922,7 +2903,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.editorcoroutines@1.0.0
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.editorcoroutines@1.0.0
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -2976,12 +2957,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-- packageId: com.unity.performance.profile-analyzer@1.1.1
+- packageId: com.unity.performance.profile-analyzer@1.2.2
   testable: 0
   isDirectDependency: 0
-  version: 1.1.1
+  version: 1.2.2
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.performance.profile-analyzer@1.1.1
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.2
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -3015,9 +2996,8 @@ m_ResolvedPackages:
     - 1.1.1
     - 1.2.2
     compatible:
-    - 1.1.1
     - 1.2.2
-    verified: 1.1.1
+    verified: 1.2.2
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -3031,23 +3011,23 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637705021060000000
-  documentationUrl: 
+  datePublishedTicks: 638108624620000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.performance.profile-analyzer@1.2/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.performance.profile-analyzer.git
-    revision: 6dcda6aee96901e98a4f01b85589054b9274ba74
+    revision: 2c63f931588caa60a1fef33b1b250b20d952dc58
     path: 
   unityLifecycle:
-    version: 1.1.1
+    version: 1.2.2
     nextVersion: 
-- packageId: com.unity.testtools.codecoverage@1.2.2
+- packageId: com.unity.testtools.codecoverage@1.2.3
   testable: 0
   isDirectDependency: 0
-  version: 1.2.2
+  version: 1.2.3
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.testtools.codecoverage@1.2.3
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -3095,7 +3075,6 @@ m_ResolvedPackages:
     - 1.2.2
     - 1.2.3
     compatible:
-    - 1.2.2
     - 1.2.3
     verified: 1.2.3
   dependencies:
@@ -3129,23 +3108,23 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638047147810000000
-  documentationUrl: 
+  datePublishedTicks: 638169790470000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git
-    revision: 4178e047a15e206f715d23af69b02acd367bb000
+    revision: d4b7ffdbe5fd9b2506f04f112caa0ed3f898c59b
     path: 
   unityLifecycle:
-    version: 1.2.2
+    version: 1.2.3
     nextVersion: 
 - packageId: com.unity.settings-manager@1.0.3
   testable: 0
   isDirectDependency: 0
   version: 1.0.3
   source: 1
-  resolvedPath: C:\UrbanRacer\Library\PackageCache\com.unity.settings-manager@1.0.3
+  resolvedPath: E:\UrbanRacer\Library\PackageCache\com.unity.settings-manager@1.0.3
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
