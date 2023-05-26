@@ -348,6 +348,7 @@
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/ObstaclesSpawner.cs"
 "Assets/Scripts/PlayerControls.cs"
+"Assets/Scripts/Utils/ColliderVisualization.cs"
 -langversion:9.0
 
 /deterministic

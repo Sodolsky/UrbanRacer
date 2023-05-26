@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ObstaclesSpawner.cs" />
+    <Compile Include="Assets\Scripts\Utils\ColliderVisualization.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

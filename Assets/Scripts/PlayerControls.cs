@@ -76,6 +76,8 @@ public class PlayerControls : MonoBehaviour
         // P³ynnie przechodzimy z obecnej pozycji na pozycjê docelow¹ u¿ywaj¹c funkcji Lerp
         //Starajcie siê nie ruszaæ zmiennej laneSwitchSmoothness bo potrafi¹ siê odpierdoliæ niez³e jaja gracz bêdzie siê trz¹s³ jak pojebany
         transform.position = Vector3.Lerp(transform.position, targetPosition, laneSwitchSmoothness * Time.fixedDeltaTime);
+        //Todo zmieniæ to na lepszy kod
+        controller.center = controller.center;
     }
     private void FixedUpdate()
     {

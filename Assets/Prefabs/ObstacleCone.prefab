@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1434211848593854765}
   - component: {fileID: 1286233721963759461}
   - component: {fileID: 4211427009266551312}
+  - component: {fileID: 6058203169964129772}
   m_Layer: 0
   m_Name: ObstacleCone
   m_TagString: Untagged
@@ -95,11 +96,11 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240851611646456043}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0.1
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 36
   m_CollisionDetection: 0
@@ -111,8 +112,8 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240851611646456043}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.1946041, z: -0.000000059604645}
-  m_Size: 1
+  m_LocalReferencePoint: {x: 0, y: 0.19460416, z: -0.000000059604645}
+  m_Size: 0.38920832
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
@@ -149,3 +150,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.38920817, z: 0.30000007}
   m_Center: {x: 0.000000059604645, y: 0.19460411, z: -0.000000059604645}
+--- !u!114 &6058203169964129772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240851611646456043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de88c92da72f6ba4d8f0c528b6342386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderColor: {r: 1, g: 0, b: 0, a: 1}
