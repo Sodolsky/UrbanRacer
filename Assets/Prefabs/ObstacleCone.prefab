@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1158974950690766033}
   m_Layer: 0
   m_Name: ObstacleCone
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,4 +176,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1ea5064c868824daebd0c9d54cde83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Car: {fileID: 0}
+  targetObjectName: Car

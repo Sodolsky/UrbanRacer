@@ -7,6 +7,8 @@ public class PlayerControls : MonoBehaviour
     private CharacterController controller;
     private Vector3 direction;
     public float moveSpeed;
+    public float maximumSpeed;
+    public float increasingSpeed;
     public float laneSwitchSmoothness = 80;
     /*
      Nasza droga posiada 3 pasy ponumerowane kolejno: 
@@ -28,6 +30,17 @@ public class PlayerControls : MonoBehaviour
 
     void Update()
     {
+        if (!PlayerManager.isGameStarted)
+        {
+            return;
+        }
+
+        //zwieksza prêdkoœæ
+        if (moveSpeed < maximumSpeed)
+        {
+            moveSpeed += increasingSpeed * Time.deltaTime;
+        }
+
         direction.z = moveSpeed;
 
         direction.y += Gravity * Time.deltaTime;
@@ -75,12 +88,28 @@ public class PlayerControls : MonoBehaviour
         }
         // P³ynnie przechodzimy z obecnej pozycji na pozycjê docelow¹ u¿ywaj¹c funkcji Lerp
         //Starajcie siê nie ruszaæ zmiennej laneSwitchSmoothness bo potrafi¹ siê odpierdoliæ niez³e jaja gracz bêdzie siê trz¹s³ jak pojebany
-        transform.position = Vector3.Lerp(transform.position, targetPosition, laneSwitchSmoothness * Time.fixedDeltaTime);
-        //Todo zmieniæ to na lepszy kod
-        controller.center = controller.center;
+
+        if(transform.position == targetPosition)
+        {
+            return;
+        }
+        Vector3 diff = targetPosition - transform.position;
+        Vector3 moveDir = diff.normalized * 25 * Time.deltaTime;
+        if(moveDir.sqrMagnitude < diff.sqrMagnitude)
+        {
+            controller.Move(moveDir);
+        } else
+        {
+            controller.Move(diff);
+        }
+        
     }
     private void FixedUpdate()
     {
+        if (!PlayerManager.isGameStarted)
+        {
+            return;
+        }
         // Poruszamy siê w przód na podstawie kierunku i prêdkoœci
         controller.Move(direction * Time.deltaTime);
     }
@@ -88,5 +117,13 @@ public class PlayerControls : MonoBehaviour
     private void Jump()
     {
         direction.y = jumpForce;
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if(hit.transform.tag == "Obstacle")
+        {
+            PlayerManager.gameOver = true;
+        }
     }
 }
