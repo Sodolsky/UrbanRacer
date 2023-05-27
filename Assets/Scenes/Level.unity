@@ -455,6 +455,7 @@ MonoBehaviour:
   - {fileID: 2106765684}
   - {fileID: 1764697880}
   spawnInterval: 0.5
+  maxObstacleGenerationDistance: 125
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

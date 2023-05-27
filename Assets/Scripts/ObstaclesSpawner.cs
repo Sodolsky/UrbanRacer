@@ -8,8 +8,10 @@ public class ObstaclesSpawner : MonoBehaviour
     public GameObject[] objectsToSpawn;  // Array of objects to spawn
     public Transform[] spawnPoints;  // Array of spawn points representing lanes
     public float spawnInterval = 0.8f;  // Time interval between spawns
+    public float maxObstacleGenerationDistance = 125f;
     private int lastSpawnedLaneIndex = -1;
     private float timer = 0f;
+    private float farestAwayObstacle = 15f;
     //TODO Fix lane spawn points moving away!
     private void Update()
     {
@@ -17,7 +19,9 @@ public class ObstaclesSpawner : MonoBehaviour
 
         if (timer >= spawnInterval)
         {
-            SpawnObject();
+            if (!(Car.transform.position.z + maxObstacleGenerationDistance < farestAwayObstacle)) {
+                SpawnObject();
+            }
             timer = 0f;
         }
     }
@@ -29,6 +33,7 @@ public class ObstaclesSpawner : MonoBehaviour
          Object Indexes in objectsToSpawnArray
         0-Cone
         1-Barrier
+        TBA
          */
         GameObject objectToSpawn;
 
@@ -64,7 +69,7 @@ public class ObstaclesSpawner : MonoBehaviour
 
         spawnPoint.position += new Vector3(0f, 0f, Car.transform.position.z + 15f);
         Instantiate(objectToSpawn, spawnPoint.position, spawnPoint.rotation);
-
+        if(spawnPoint.position.z>farestAwayObstacle) farestAwayObstacle=spawnPoint.position.z;
         lastSpawnedLaneIndex = randomLaneIndex;
     }
     private void SpawnOnMiddleLane(GameObject objectToSpawn)
@@ -73,7 +78,7 @@ public class ObstaclesSpawner : MonoBehaviour
         spawnPoint.position += new Vector3(0f, 0f, Car.transform.position.z + 15f);
 
         GameObject spawnedObject = Instantiate(objectToSpawn, spawnPoint.position, spawnPoint.rotation);
-        Debug.Log(spawnPoint.position.z);
+        if (spawnPoint.position.z > farestAwayObstacle) farestAwayObstacle = spawnPoint.position.z;
         spawnedObject.transform.Translate(-4.3f, 0f, 0f);
         spawnedObject.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
     }
@@ -91,9 +96,11 @@ public class ObstaclesSpawner : MonoBehaviour
         Transform spawnPoint2 = spawnPoints[randomLaneIndex2];
 
         spawnPoint1.position += new Vector3(0f, 0f, Car.transform.position.z + 15f);
+        if (spawnPoint1.position.z > farestAwayObstacle) farestAwayObstacle = spawnPoint1.position.z;
         Instantiate(objectToSpawn, spawnPoint1.position, spawnPoint1.rotation);
 
         spawnPoint2.position += new Vector3(0f, 0f, Car.transform.position.z + 15f);
+        if (spawnPoint2.position.z > farestAwayObstacle) farestAwayObstacle = spawnPoint1.position.z;
         Instantiate(objectToSpawn, spawnPoint2.position, spawnPoint2.rotation);
 
         lastSpawnedLaneIndex = randomLaneIndex1;
