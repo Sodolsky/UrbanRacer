@@ -8,7 +8,7 @@ public class RoadMenager : MonoBehaviour
     public GameObject[] roadTiles;
     public float zSpawnLocation = 0;
     public float tileLength = 40;
-    public int numberOfVisibleTiles = 5;
+    public int numberOfVisibleTiles = 7;
     public Transform playerTransformPosition;
     private List<GameObject> activeTiles = new List<GameObject> ();
     void Start()
@@ -41,4 +41,5 @@ public class RoadMenager : MonoBehaviour
         Destroy(activeTiles[0]);
         activeTiles.RemoveAt(0);
     }
+  
 }
