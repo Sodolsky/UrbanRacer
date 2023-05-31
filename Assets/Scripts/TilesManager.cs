@@ -7,7 +7,7 @@ public class TilesManager : MonoBehaviour
 
     public GameObject[] tilePrefabs;
     public float zSpawn = 0;
-    public float tileLength = 30;
+    public float tileLength = 25;
     public int numberOfTiles = 5;
     public Transform playerTransform;
     private List<GameObject> activeTiles = new List<GameObject>();
@@ -39,8 +39,9 @@ public class TilesManager : MonoBehaviour
     }
     public void SpawnTile(int tileIndex)
     {
-        GameObject go =Instantiate(tilePrefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
-        activeTiles.Add(go);
+        GameObject roadTile =Instantiate(tilePrefabs[tileIndex], transform.forward*zSpawn, transform.rotation);
+        roadTile.transform.Translate(6.27255917f, -7.57999992f,0);
+        activeTiles.Add(roadTile);
         zSpawn += tileLength;
     }
     private void DeleteTile()
