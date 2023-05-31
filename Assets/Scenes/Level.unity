@@ -322,8 +322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  maximumSpeed: 200
-  increasingSpeed: 5
+  maximumSpeed: 100
+  increasingSpeed: 0.15
   laneSwitchSmoothness: 80
   distanceBetweenLanes: 2.5
   jumpForce: 12
