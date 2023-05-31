@@ -25,7 +25,9 @@ public class PlayerControllerSwipeVersion : MonoBehaviour
 
     void Start()
     {
+       
         controller = GetComponent<CharacterController>();
+
     }
 
     void Update()
@@ -51,6 +53,7 @@ public class PlayerControllerSwipeVersion : MonoBehaviour
                 Jump();
             }
         }
+
 
         // Sprawdzamy, czy zosta³ naciœniêty klawisz strza³ki w prawo
         if (SwipeController.swipeRight)
