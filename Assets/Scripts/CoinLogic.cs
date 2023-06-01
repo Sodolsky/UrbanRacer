@@ -24,6 +24,7 @@ public class CoinLogic : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            FindObjectOfType<AudioManager>().PlaySound("PickUpCoin");
             PlayerManager.numberOfCoins += 1;
             Destroy(gameObject);
         }

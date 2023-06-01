@@ -126,6 +126,7 @@ public class PlayerControllerSwipeVersion : MonoBehaviour
         if (hit.transform.tag == "Obstacle")
         {
             PlayerManager.gameOver = true;
+            FindObjectOfType<AudioManager>().PlaySound("GameOver");
         }
     }
 }
