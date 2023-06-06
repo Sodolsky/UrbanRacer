@@ -14,7 +14,10 @@ public class TilesManager : MonoBehaviour
 
     void Start()
     {
-    for(int i = 0; i < numberOfTiles; i++)
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.isKinematic = true;
+        rb.useGravity = false;
+        for (int i = 0; i < numberOfTiles; i++)
         {
             if(i==0)
             {

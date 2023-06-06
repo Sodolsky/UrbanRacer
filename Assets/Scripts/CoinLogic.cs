@@ -29,7 +29,7 @@ public class CoinLogic : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.CompareTag("Player"))
         {
             FindObjectOfType<AudioManager>().PlaySound("PickUpCoin");
             PlayerManager.numberOfCoins += 1;

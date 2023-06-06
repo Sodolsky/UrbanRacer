@@ -16,9 +16,12 @@ public class DestroyObstacle : MonoBehaviour
     void Update()
     {
         GameObject Car = GameObject.Find(targetObjectName);
-        if (gameObject.transform.position.z < Car.transform.position.z - 20)
+        if (Car)
         {
-            Destroy(gameObject);
-        }   
+            if (gameObject.transform.position.z < Car.transform.position.z - 20)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }
