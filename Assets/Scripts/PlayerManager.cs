@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
 public class PlayerManager : MonoBehaviour
 {
     public static bool gameOver;
@@ -16,18 +15,28 @@ public class PlayerManager : MonoBehaviour
     public static int numberOfCoins;
     public TextMeshProUGUI Coins;
 
+    private float playerDistance;
+    public TextMeshProUGUI DistanceLength;
+    public TextMeshProUGUI DistanceLength2;
+
+    public GameObject Car;
+
+    private CarDistance distanceScript;
+
     void Start()
     {
         gameOver = false;
         Time.timeScale = 1;
         isGameStarted = false;
         numberOfCoins = 0;
+        playerDistance = 0f;
+
+        distanceScript = Car.GetComponent<CarDistance>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(gameOver)
+        if (gameOver)
         {
             Time.timeScale = 0;
             gameOverPanel.SetActive(true);
@@ -35,7 +44,14 @@ public class PlayerManager : MonoBehaviour
 
         Coins.text = "Coins: " + numberOfCoins;
 
-        if(SwipeController.tap || Input.GetKeyDown(KeyCode.Return))
+        if (isGameStarted)
+        {
+            playerDistance += distanceScript.GetDistanceDelta();
+            DistanceLength.text = "Distance: " + playerDistance.ToString("F0") + " m";
+            DistanceLength2.text = "Distance: " + playerDistance.ToString("F0") + " m";
+        }
+
+        if (SwipeController.tap || Input.GetKeyDown(KeyCode.Return))
         {
             isGameStarted = true;
             Destroy(startingText);
